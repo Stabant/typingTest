@@ -126,10 +126,7 @@ def MoveLetters(direction):
             i.width = screensize[0]/40
 
 
-def wordCheck():
-    print("worcheck run")
- 
-    
+def wordCheck():    
     game.correctletters = 0
 
     wronglist.clear()
@@ -183,20 +180,17 @@ running = True
 while running:
     screensize = pygame.display.get_surface().get_size()
     w, h = pygame.display.get_surface().get_size()
-    print(w)
     MoveLetters('update')
 
     
     if game.end == False:
         if len(wronglist) == len(checklist):
-            print('game over')
             endscreen()
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
             if event.type == pygame.KEYDOWN:
-                print(wronglist)
                 if event.key == pygame.K_ESCAPE:
                     pygame.quit()
                 if event.key == pygame.K_TAB:
