@@ -13,6 +13,3 @@ To run the code:
 ```
 git clone git@github.com:Stabant/typingTest.git
 ```
-```
-git clone git@github.com:Stabant/typingTest.git
-```
